@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task1 | Age Calculator</title>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+      rel="stylesheet" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Age Calculator App -->
+    <section id="AC-section">
+      <!-- app -->
+      <main>
+        <div class="container">
+          <!-- app-title -->
+          <div class="AC-title">
+            <div class="lime-line"></div>
+            <h1 class="">Age <span class="purple">Calculator</span></h1>
+          </div>
+          <!-- app-form -->
+          <form class="AC-form">
+            <!-- app-body -->
+            <div class="AC-body">
+              <input
+                class="red-glow"
+                id="user-birthday"
+                name="date"
+                type="date"
+                onfocus="'showPicker' in this && this.showPicker()" />
+            </div>
+            <!-- calculate btn -->
+            <div class="AC-btn">
+              <button class="btn" id="calculate-age-btn">Calculate</button>
+            </div>
+          </form>
+          <!-- error -->
+          <div id="error-message" class="hidden">
+            <span class="error-message-text">Invalid Date*</span>
+          </div>
+        </div>
+        <div class="container">
+          <div class="dates-card hidden">
+            <div class="user-birthday">
+              <div class="title">
+                <img src="./images/calendar.png" alt="" />
+                <h2>Your Date of Birth</h2>
+              </div>
+              <div class="data">
+                <div class="col">
+                  <p class="num year">2000</p>
+                  <div class="text">Years</div>
+                </div>
+                <div class="col">
+                  <p class="num month">07</p>
+                  <div class="text">Months</div>
+                </div>
+                <div class="col">
+                  <p class="num day">20</p>
+                  <div class="text">Days</div>
+                </div>
+              </div>
+            </div>
+            <div class="user-age">
+              <div class="title">
+                <img src="./images/age-group.png" alt="" />
+                <h2>Your Age Till Today</h2>
+              </div>
+              <div class="data">
+                <div class="col">
+                  <p class="num year">23</p>
+                  <div class="text">Years</div>
+                </div>
+                <div class="col">
+                  <p class="num month">10</p>
+                  <div class="text">Months</div>
+                </div>
+                <div class="col">
+                  <p class="num day">17</p>
+                  <div class="text">Days</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <!-- javascript -->
+    <script src="script.js"></script>
+  </body>
+</html>

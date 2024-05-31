@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito';
+    color: rgb(60, 17, 80);
+}
+
+#AC-section{
+    height: 100vh;
+    padding: 4rem 0;
+    width: 100%;
+    background: rgb(57,74,199);
+    background: linear-gradient(326deg, rgba(57,74,199,1) 0%, rgba(148,59,209,1) 50%, rgba(230,83,229,1) 100%);
+}
+
+#AC-section main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+}
+
+.AC-title{
+    font-size: 2rem;
+    position: relative;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.AC-title h1{
+    color: whitesmoke;
+    margin-left: 1.5rem;
+}
+
+.AC-title .lime-line{
+    border: 0.2rem solid rgb(147, 250, 133);
+    border-radius: 0.5rem;
+    position: absolute;
+    height: 4rem;
+    /* left: -1.5rem; */
+}
+
+.AC-title .purple{
+    color: rgb(147, 250, 133);
+}
+
+.AC-form{
+    background-color: rgba(0, 0, 0, 0.171);
+    padding: 2rem;
+    width: 100%;
+    border-radius: 0.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 5px 2px rgba(60, 17, 80, 0.185);
+    margin-bottom: 2rem;
+}
+
+.AC-form .AC-body{
+    width: 55%;
+}
+
+.AC-form input{
+    box-shadow: 0 0 0.5rem white;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 0.2rem;
+    outline: none;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+input::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+}
+
+.AC-form input:focus,
+.AC-form input:hover{
+    box-shadow: 0 0 1rem white;
+}
+
+/* /////////////////////////////////////////////////// */
+/* /////////////////// form button /////////////////// */
+
+.AC-form button{
+    padding: 0.3rem 2rem;
+    border-radius: 0.25rem;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    color: whitesmoke;
+    border: 0.4rem solid rgb(147, 250, 133);
+    background-color: inherit;
+    cursor: pointer;
+    box-shadow: 0 0 0.5rem rgb(147, 250, 133);
+}
+
+.AC-form button:hover{
+    background-color: rgb(147, 250, 133);
+    box-shadow: 0 0 2rem rgb(147, 250, 133);
+}
+
+
+/* /////////////////////////////////////////////////// */
+/* /////////////////// dates card /////////////////// */
+
+.dates-card{
+    background-color: rgb(235, 239, 245);
+    border-radius: 0.2rem;
+    padding: 3rem 0.5rem;
+    box-shadow: 
+        inset 0 0 0.2rem rgb(60, 17, 80),
+        0 0 2rem rgb(60, 17, 80);
+    user-select: none;
+    transition: 0.2s;
+}
+
+.dates-card .user-age,
+.dates-card .user-birthday{
+    margin-top: 0.5rem;
+}
+
+.dates-card .title{
+    display: flex;
+    background-color: rgb(147, 250, 133);
+    padding: 0.5rem 3rem;
+    text-shadow: 1px 1px 2px rgba(60, 17, 80);
+    border-radius: 0.2rem;
+}
+
+.dates-card h2{
+    color: white;
+}
+
+.dates-card img{
+    margin-right: 1rem;
+}
+
+.dates-card .col{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.dates-card .col .text{
+    font-size: 0.9rem;margin-bottom: 0.4rem;
+}
+
+.dates-card .data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.dates-card .data .num{
+    text-shadow: 1px 1px 2px white, 0 0 0.2em pink;
+    box-shadow: inset 0px 0px 5px rgba(102, 102, 102, 0.9);
+    background-color: rgb(255, 255, 255);
+    padding: 1rem 1.5rem;
+    margin: 0 0.5rem;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 0.2rem;
+    font-size: 1.5rem;
+}
+
+.dates-card .user-age .num{
+    box-shadow: 0 0 1rem rgb(250, 133, 143);
+    outline: 2px solid rgb(250, 133, 143);
+}
+
+.dates-card .user-birthday .num{
+    box-shadow: 0 0 1rem rgb(147, 250, 133);
+    outline: 2px solid rgb(147, 250, 133);
+}
+
+
+/* /////////////////////////////////////////////////// */
+/* ////////////////// error styles /////////////////// */
+
+.hidden{
+    display: none;
+}
+
+#error-message{
+    width: 100%;
+    text-align: left;
+    padding: 0 1rem;
+}
+
+.error-message-text{
+    margin: 0 1rem;
+    padding: 0.8rem 1rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #F7254A;
+    background-color: rgba(0, 0, 0, 0.171);
+    border-radius: 0.2rem;
+    box-shadow: 0 0 2rem #F7254A;
+}
